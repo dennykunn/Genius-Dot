@@ -10,7 +10,7 @@
 <!-- pala -->
 <header style="height: 75vh;">
     <div class="h-full w-full bg-no-repeat bg-cover" style="background-image: url('https://images.unsplash.com/photo-1588460789007-a79cfe129bcf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');">
-        <div class="h-full w-full bg-gray-900 bg-opacity-75">
+        <div class="h-full w-full bg-gray-900 bg-opacity-75 ">
             <!-- navbar -->               
             <nav class="w-full border-b border-gray-600 h-20">
                 <div class="container mx-auto md:px-10 py-4 px-4 md:flex md:justify-between md:items-center">
@@ -19,18 +19,29 @@
                             <a class="text-white leading-none hover:text-blue-500" href="#"><span class="text-lg font-bold">Genius </span><span class="text-lg">Dot</span>
                             <p class="text-xs">Your tagline here</p></a>
                         </div>
+                        <!-- Mobile menu button -->
+                        <div class="flex md:hidden">
+                            <button type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600"
+                                aria-label="toggle menu">
+                                <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                                    <path fill-rule="evenodd"
+                                        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                     
                 <!-- menu -->
-                    <div class="md:flex items-center">
-                        <div class="flex flex-col md:flex-row">
-                            <a class="my-1 text-sm text-white font-medium hover:text-blue-500 md:mx-4 md:my-0 " href="#">Our Agency</a>
-                            <a class="my-1 text-sm text-white font-medium hover:text-blue-500 md:mx-4 md:my-0" href="#">Websites</a>
-                            <a class="my-1 text-sm text-white font-medium hover:text-blue-500 md:mx-4 md:my-0" href="#">eCommerce</a>
-                            <a class="my-1 text-sm text-white font-medium hover:text-blue-500 md:mx-4 md:my-0" href="#">Branding</a>
-                            <a class="my-1 text-sm text-white font-medium hover:text-blue-500 md:mx-4 md:my-0" href="#">Work</a>
-                            <a class="my-1 text-sm text-white font-medium hover:text-blue-500 md:mx-4 md:my-0" href="#">Contact</a>
-                        </div> 
+                    <div class="md:flex items-center md:hidden-none hidden">
+                        <div class="flex flex-col block md:flex-row">
+                            <a class="my-1 text-sm text-white font-medium hover:text-blue-500 md:mx-4 md:my-0 lg:inline-block" href="#">Our Agency</a>
+                            <a class="my-1 text-sm text-white font-medium hover:text-blue-500 md:mx-4 md:my-0 lg:inline-block" href="#">Websites</a>
+                            <a class="my-1 text-sm text-white font-medium hover:text-blue-500 md:mx-4 md:my-0 lg:inline-block" href="#">eCommerce</a>
+                            <a class="my-1 text-sm text-white font-medium hover:text-blue-500 md:mx-4 md:my-0 lg:inline-block" href="#">Branding</a>
+                            <a class="my-1 text-sm text-white font-medium hover:text-blue-500 md:mx-4 md:my-0 lg:inline-block" href="#">Work</a>
+                            <a class="my-1 text-sm text-white font-medium hover:text-blue-500 md:mx-4 md:my-0 lg:inline-block" href="#">Contact</a>
+                        </div>
                 </div> 
             </nav>
             <div class="h-full w-full sm:px-16 lg:px-32 py-4 px-6 flex flex-col justify-center items-center">
@@ -180,16 +191,13 @@
                 <svg class="w-4 h-6 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path d="M7.05 9.293L6.343 10 12 15.657l1.414-1.414L9.172 10l4.242-4.243L12 4.343z" /></svg>
                 </button>
-                <!-- smartcompany -->
-                <span class="md:mx-8 mx-0 xl:text-3xl md:text-2xl text-xl font-semibold font-sans text-opacity-25 text-black">smartcompany</span>
+
                 <!-- inc. -->
-                <span class="mx-8 xl:text-3xl md:text-2xl text-xl font-bold font-serif text-opacity-50 text-black">Inc.</span>
+                <span class="md:mx-10 mx-5 xl:text-3xl md:text-2xl text-xl font-bold font-serif text-opacity-50 text-black">Inc.</span>
                 <!-- shuffpost -->
-                <span class="mx-8 xl:text-3xl md:text-2xl text-xl font-semibold uppercase font-sans text-opacity-50 text-black">Shuffpost</span>
+                <span class="md:mx-10 mx-5 xl:text-3xl md:text-2xl text-xl font-semibold uppercase font-sans text-opacity-50 text-black">Shuffpost</span>
                 <!-- forbes -->
-                <span class="mx-8 xl:text-3xl md:text-2xl text-xl font-semibold font-serif text-opacity-75 text-black">Forbes</span>
-                <!-- dailytypography -->
-                <span class="md:mx-8 mx-0 xl:text-3xl  md:text-2xl text-xl font-semibold font-serif text-opacity-25 text-black">Daily Typhograpy</span>
+                <span class="md:mx-10 mx-5 xl:text-3xl md:text-2xl text-xl font-semibold font-serif text-opacity-75 text-black">Forbes</span>
                 
                 <button class="h-8 w-6  bg-pink-600 hover:bg-pink-800 rounded-sm flex items-center justify-center focus:outline-none"><svg class="w-4 h-6 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" /></svg></button>
@@ -199,8 +207,8 @@
 
     <!-- 6 -->
     <div class="bg-white w-full">
-        <div class="container w-full mx-auto py-16">
-            <div class="w-full h-full mx-auto xl:max-w-3xl sm:max-w-xl max-w-md items-center">
+        <div class="container w-full mx-auto  py-16 sm:px-0 px-8">
+            <div class="w-full h-full mx-auto xl:max-w-3xl  sm:max-w-xl max-w-md items-center">
                 <p class="xl:text-5xl md:text-4xl text-3xl font-semibold text-center">Get Free Quote</p>
                 <p class="text-center text-xs md:text-sm text-gray-500">It is a long established fact that a reader will be distracted by the readable contant of a It is a long established fact that a reader will be distracted by the readable contant of a.</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
